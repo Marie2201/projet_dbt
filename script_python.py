@@ -29,3 +29,4 @@ for table in liste_tables:
    df = pd.read_csv(csv_url)
    # On ajoute les informations de de dataframe à la table dans MySQL.
    df.to_sql(f"raw_{table}", engine, if_exists="replace", index=False)
+   
